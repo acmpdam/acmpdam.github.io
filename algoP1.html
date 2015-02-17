@@ -1,0 +1,70 @@
+<DOCTYPE html>
+<html>
+
+<head>
+    <title>Algo of the Week</title>
+</head>
+
+<body>
+    
+    <h1>PROBLEM 1: Weighted Graph Traversal</h1>
+    <h2>Contributed by Edward Pryor</h2>
+    
+    <br><br>
+    
+    <h3>Background</h3>
+    
+    <p>A graph is a collection of nodes, also called vertices, connected by edges. 
+    A graph is considered weighted if the edges have a value associated with them. 
+    A graph is considered directed if each edge imposes a directional restraint, 
+	that is, you may travel from node A to node B, but not the other way around.</p>
+
+    <br>
+
+    <h3>Task</h3>
+
+    <p>Write a program to find the lowest cost path through a graph from a denoted 
+    start node to a specific end node. You do not need to visit all the nodes in the graph.</p>
+    
+    <p>For instance, in the following graph:</p> <br>
+
+    <img src="images/Problem1.png" alt="Problem 1"> <br>
+    
+    <p>The least cost path from A to E would be A, C, D, E, with a cost of 12. 
+    Note that this path is longer in the number of hops than A, C, E, but path 
+    A, C, E, has a weight of 14, and therefore is more expensive.</p>
+    
+    <br>
+    
+    <h3>Input</h3>
+    
+    <p>Your program should accept its input from standard in. Format the input 
+    so that each line of input represents a Node and all the edges leading from 
+    it along with their weights. The first line is assumed to be the start node, and 
+    the last line will be the destination node. Signal the end of your input with a 
+    line containing only the * character. As an example, the graph above 
+    would be input in the following way:</p>
+    
+    <p>A B5 C5</p>
+    <p>B C1 D7</p>
+    <p>C D3 E9</p>
+    <p>D E4</p>
+    <p>E</p>
+
+    <p>*Keep one space between each entry in the line, and I recommend using 
+    split parse the input.</p>
+    
+    <p>There will be no space between a node and its weight, so 'B5' describes the 
+    edge to B with a weight of 5. Because it was on the 'A' line, that edge came 
+    from node A. Alphabetical order of input should not matter.</p>
+    
+    <br>
+    
+    <h3>Output</h3>
+    
+    <p>Print the path of nodes you found to standard out along with the weight you 
+    calculated. The above graph would produce "A C D E 12" as its output.</p>
+
+</body>
+
+</html>
