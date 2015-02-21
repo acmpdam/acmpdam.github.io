@@ -1,8 +1,173 @@
+* {
+    padding:0;
+    margin:0;
+}
+
 #mainHeader {
     text-align: center;
+    font-family: "open_sanssemibold";
+    font-size: 1em;
+    color: white;
+    background-color: #A8ACAD;
+    padding: 15px;
+    position: fixed;
+    z-index:100000;
+    width:100%;
 
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(top, #A8ACAD 0%, #6F7273 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, #A8ACAD 0%, #6F7273 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(top, #A8ACAD 0%, #6F7273 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #A8ACAD), color-stop(1, #6F7273));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, #A8ACAD 0%, #6F7273 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, #A8ACAD 0%, #6F7273 100%);
+
+
+    -moz-box-shadow:    0px 4px 10px 5px #111;
+    -webkit-box-shadow: 0px 4px 10px 5px #111;
+    box-shadow:         0px 4px 10px 5px #111;
+}
+
+#mainHeader table {
+    margin: auto;
+}
+
+#upcomingEvents {
+
+    margin-left: 20%;
+    margin-right: 10%;
+    background-color: #A8ACAD;
+    padding: 10% 5% 100% 5%;
+}
+
+#upcomingEvents h1 {
+    font-family: "open_sanssemibold"
+}
+
+#clear-float {
+    clear: both;
+}
+
+a,
+a.name,
+a:hover.name,
+a:focus.name,
+a:active.name
+{
+    text-decoration: none;
+}
+
+a {
+    color: #990033;
+}
+a:hover {
+    color: black;
+}
+a:active {
+    font-family: "open_sanssemibold";
+}
+
+button {
+    font-family: "open_sansregular";
+    margin: auto;
 }
 
 body {
-    background-color: #990033;
+   background-color: #990033;
+   font-family: "open_sansregular";
+   font-size: 100%;
+    margin: auto;
+
+}
+
+nav {
+    background-color: #A8ACAD;
+    max-width: 15%;
+    min-width: 15%;
+    padding: 100px 1% 2% 1%;
+    height: 100%;
+    float: left;
+    margin: auto;
+}
+nav h2 {
+    text-align: center;
+}
+
+nav li {
+    padding-top: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    //float: bottom;
+    padding: 50px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    font-family: "open_sanssemibold";
+    color: white;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../web\ fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot');
+    src: url('../web\ fonts/opensans_regular_macroman/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../web\ fonts/opensans_regular_macroman/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../web\ fonts/opensans_regular_macroman/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../web\ fonts/opensans_regular_macroman/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../web\ fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot');
+    src: url('../web\ fonts/opensans_bold_macroman/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../web\ fonts/opensans_bold_macroman/OpenSans-Bold-webfont.woff') format('woff'),
+    url('../web\ fonts/opensans_bold_macroman/OpenSans-Bold-webfont.ttf') format('truetype'),
+    url('../web\ fonts/opensans_bold_macroman/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../web\ fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot');
+    src: url('../web\ fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../web\ fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.woff') format('woff'),
+    url('../web\ fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.ttf') format('truetype'),
+    url('../web\ fonts/opensans_semibold_macroman/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.hover-wobble {
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.hover-wobble:hover {
+    -webkit-transform:rotate(60deg);
+    transform:rotate(60deg);
 }

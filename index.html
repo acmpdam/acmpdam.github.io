@@ -4,28 +4,45 @@
     <meta charset="utf-8">
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="web fonts/font-awesome-4.3.0/css/font-awesome.css">
 </head>
 <body>
     <header>
-    <h1 id="mainHeader"> SUNY Potsdam ACM Student Chapter </h1>
+    <div id="mainHeader">
+        <table display="none">
+            <tr>
+                <td><i class="fa fa-power-off fa-2x fa-fw"></i></td>
+                <td><h1>SUNY Potsdam ACM Student Chapter</h1></td>
+                <td><i class="fa fa-gamepad fa-2x fa-fw hover-wobble"></i></td>
+            </tr>
+        </table>
+    </div>
     </header>
+
     <nav>
-        <ul>
-            <li>Members</li>
-            <li><a href=algoP1.html>Algorithms of the Week</a></li>
-            <li>Minutes</li>
-            <li><a href=jekyll.html>Jekyll Blog</li>
+        <h2>Navigation</h2>
+        <ul class="fa-ul">
+            <li><i class="fa fa-users fa-fw"></i>&nbsp;Members</li>
+            <li><i class="fa fa-code fa-fw"></i>&nbsp;<a href=algoP1.html>Algorithms of the Week</a></li>
+            <li><i class="fa fa-file-text-o fa-fw"></i>&nbsp;Minutes</li>
+            <li><i class="fa fa-quote-left fa-fw"></i>&nbsp;<a href=jekyll.html>Jekyll Blog</a></li>
+            <li><i class="fa fa-user-secret fa-fw"></i>&nbsp;<a href=chicken.html>Go To Chicken</a></li>
         </ul>
     </nav>
+    <span id="clear-float"></span>
     <div id="upcomingEvents">
+        <h1>Upcoming Events</h1>
+        &nbsp;
         <ul>
-            <li></li>
+            <li>Something Goes Here</li>
         </ul>
+        <button onclick="printPun()"><i class="fa fa-child fa-fw"></i><strong>Pun</strong>ishment</button><br>
+
     </div>
-    <button onclick="printPun()"><strong>Pun</strong>ishment</button>
-    <a href=chicken.html> GO TO CHICKEN </a><br>
-    <!--    <img src=http://anhdep.pro/wp-content/uploads/2014/03/Hinh-Nen-Iphone-4-De-Thuon-Nhat-9.jpg>-->
     <footer>
-    <small><a href="#">Timezone Misery Machine</a></small>
+        <small><a href="#"><i class="fa fa-clock-o fa-fw fa-spin"></i> Timezone Misery Machine</a></small>
     </footer>
+
+    <!--    <img src=http://anhdep.pro/wp-content/uploads/2014/03/Hinh-Nen-Iphone-4-De-Thuon-Nhat-9.jpg>-->
+
 </body>
